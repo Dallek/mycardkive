@@ -14,6 +14,11 @@
 		3D4463961B81490B00F4E05A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4463951B81490B00F4E05A /* Images.xcassets */; };
 		3D4463991B81490B00F4E05A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D4463971B81490B00F4E05A /* LaunchScreen.xib */; };
 		3D4463A51B81490B00F4E05A /* CardKiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463A41B81490B00F4E05A /* CardKiveTests.m */; };
+		3D4463B01B815F8200F4E05A /* checkbox_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4463AE1B815F8200F4E05A /* checkbox_unchecked.png */; };
+		3D4463B11B815F8200F4E05A /* checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D4463AF1B815F8200F4E05A /* checkbox.png */; };
+		3D4463B81B816E7100F4E05A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463B71B816E7100F4E05A /* RegisterViewController.m */; };
+		3D4463BB1B816EB200F4E05A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463BA1B816EB200F4E05A /* MenuViewController.m */; };
+		3D4463BE1B81723E00F4E05A /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463BD1B81723E00F4E05A /* global.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		3D44639E1B81490B00F4E05A /* CardKiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardKiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4463A31B81490B00F4E05A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D4463A41B81490B00F4E05A /* CardKiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardKiveTests.m; sourceTree = "<group>"; };
+		3D4463AE1B815F8200F4E05A /* checkbox_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_unchecked.png; sourceTree = "<group>"; };
+		3D4463AF1B815F8200F4E05A /* checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox.png; sourceTree = "<group>"; };
+		3D4463B61B816E7100F4E05A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		3D4463B71B816E7100F4E05A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		3D4463B91B816EB200F4E05A /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3D4463BA1B816EB200F4E05A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3D4463BC1B81723E00F4E05A /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		3D4463BD1B81723E00F4E05A /* global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = global.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +94,20 @@
 		3D4463871B81490B00F4E05A /* CardKive */ = {
 			isa = PBXGroup;
 			children = (
+				3D4463BC1B81723E00F4E05A /* global.h */,
+				3D4463BD1B81723E00F4E05A /* global.m */,
 				3D44638C1B81490B00F4E05A /* AppDelegate.h */,
 				3D44638D1B81490B00F4E05A /* AppDelegate.m */,
 				3D44638F1B81490B00F4E05A /* ViewController.h */,
 				3D4463901B81490B00F4E05A /* ViewController.m */,
+				3D4463B61B816E7100F4E05A /* RegisterViewController.h */,
+				3D4463B71B816E7100F4E05A /* RegisterViewController.m */,
+				3D4463B91B816EB200F4E05A /* MenuViewController.h */,
+				3D4463BA1B816EB200F4E05A /* MenuViewController.m */,
 				3D4463921B81490B00F4E05A /* Main.storyboard */,
 				3D4463951B81490B00F4E05A /* Images.xcassets */,
 				3D4463971B81490B00F4E05A /* LaunchScreen.xib */,
+				3D4463B21B815F8B00F4E05A /* Images */,
 				3D4463881B81490B00F4E05A /* Supporting Files */,
 			);
 			path = CardKive;
@@ -117,6 +137,15 @@
 				3D4463A31B81490B00F4E05A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D4463B21B815F8B00F4E05A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3D4463AE1B815F8200F4E05A /* checkbox_unchecked.png */,
+				3D4463AF1B815F8200F4E05A /* checkbox.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4463B11B815F8200F4E05A /* checkbox.png in Resources */,
 				3D4463941B81490B00F4E05A /* Main.storyboard in Resources */,
+				3D4463B01B815F8200F4E05A /* checkbox_unchecked.png in Resources */,
 				3D4463991B81490B00F4E05A /* LaunchScreen.xib in Resources */,
 				3D4463961B81490B00F4E05A /* Images.xcassets in Resources */,
 			);
@@ -221,7 +252,10 @@
 			files = (
 				3D4463911B81490B00F4E05A /* ViewController.m in Sources */,
 				3D44638E1B81490B00F4E05A /* AppDelegate.m in Sources */,
+				3D4463BE1B81723E00F4E05A /* global.m in Sources */,
 				3D44638B1B81490B00F4E05A /* main.m in Sources */,
+				3D4463B81B816E7100F4E05A /* RegisterViewController.m in Sources */,
+				3D4463BB1B816EB200F4E05A /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +386,7 @@
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,6 +397,7 @@
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

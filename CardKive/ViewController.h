@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    BOOL checked;
+}
+//Toggle check box
+- (IBAction)checkButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *checkBoxButton;
 
+//Forgot User or Password
+- (IBAction)forgotInfo:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *loginUserName;
+@property (weak, nonatomic) IBOutlet UITextField *loginPassword;
+
+//login
+- (IBAction)loginButton:(id)sender;
 
 @end
 
