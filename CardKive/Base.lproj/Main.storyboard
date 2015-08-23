@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -130,23 +130,38 @@
                                     <segue destination="bz6-qk-1Q0" kind="presentation" id="JhR-My-3Tu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Y7-uck">
-                                <rect key="frame" x="277" y="120" width="62" height="30"/>
-                                <state key="normal" title="All Cards">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Y7-uck">
+                                <rect key="frame" x="251" y="123" width="99" height="30"/>
+                                <state key="normal" title="View All Cards">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-pS-pk1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-pS-pk1">
                                 <rect key="frame" x="285" y="232" width="30" height="30"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itW-bW-Lff">
+                                <rect key="frame" x="258" y="550" width="84" height="30"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cameraButton:" destination="YyD-ri-mTp" eventType="touchUpInside" id="bEL-5F-7dn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" constant="8" symbolic="YES" id="kMZ-1l-tUJ"/>
-                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="trailing" secondItem="Vah-5S-PSY" secondAttribute="trailingMargin" id="rhm-RH-Xyi"/>
+                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" constant="8" symbolic="YES" id="5yd-Qr-d6a"/>
+                            <constraint firstItem="s4e-pS-pk1" firstAttribute="centerX" secondItem="g0p-Y7-uck" secondAttribute="centerX" id="OZ3-tR-6Y5"/>
+                            <constraint firstItem="s4e-pS-pk1" firstAttribute="top" secondItem="g0p-Y7-uck" secondAttribute="bottom" constant="79" id="Pi5-V0-1KI"/>
+                            <constraint firstAttribute="bottom" secondItem="itW-bW-Lff" secondAttribute="bottom" constant="20" symbolic="YES" id="VQb-yY-SDp"/>
+                            <constraint firstItem="g0p-Y7-uck" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" constant="103" id="aHj-IO-nWo"/>
+                            <constraint firstItem="s4e-pS-pk1" firstAttribute="centerX" secondItem="Vah-5S-PSY" secondAttribute="centerX" id="bPR-gL-pcf"/>
+                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="trailing" secondItem="Vah-5S-PSY" secondAttribute="trailingMargin" id="qLx-t8-Zhe"/>
+                            <constraint firstItem="itW-bW-Lff" firstAttribute="centerX" secondItem="s4e-pS-pk1" secondAttribute="centerX" id="vyv-lg-k13"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -260,10 +275,10 @@
             </objects>
             <point key="canvasLocation" x="788" y="-294"/>
         </scene>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="uII-le-zBN">
             <objects>
-                <viewController id="bz6-qk-1Q0" sceneMemberID="viewController">
+                <viewController id="bz6-qk-1Q0" customClass="AccountViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EYp-v3-e2Z"/>
                         <viewControllerLayoutGuide type="bottom" id="zmj-Ng-Rfz"/>
@@ -271,12 +286,191 @@
                     <view key="view" contentMode="scaleToFill" id="nV7-A8-vzQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgI-Mo-2y0">
+                                <rect key="frame" x="16" y="28" width="77" height="30"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GLt-2k-Q8n" kind="unwind" unwindAction="unwindToMenuViewController:" id="D6S-gJ-vt7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ3-sO-5eA">
+                                <rect key="frame" x="215" y="107" width="171" height="30"/>
+                                <state key="normal" title="Edit Account Information">
+                                    <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editAccount:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="ysB-Cp-OtV"/>
+                                    <segue destination="nbC-uf-kr6" kind="presentation" id="cto-6E-Ruy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o6-f6-WvY">
+                                <rect key="frame" x="250" y="168" width="101" height="30"/>
+                                <state key="normal" title="Manage Filters">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="manageFilters:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="4zr-gL-lqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-zR-Ysr">
+                                <rect key="frame" x="239" y="231" width="122" height="30"/>
+                                <state key="normal" title="Contact CardKive">
+                                    <color key="titleColor" red="0.098807804653567977" green="1" blue="0.078343733033616192" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="contactCardKive:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="Mhi-Gh-1Bt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-dh-eh1">
+                                <rect key="frame" x="252" y="513" width="96" height="30"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="privacyPolicy:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="ZIJ-OR-opA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-ce-LGc">
+                                <rect key="frame" x="245" y="312" width="110" height="30"/>
+                                <state key="normal" title="Re-Sync Device">
+                                    <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reSync:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="sCs-vO-m4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-PS-COx">
+                                <rect key="frame" x="277" y="399" width="56" height="30"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOut:" destination="bz6-qk-1Q0" eventType="touchUpInside" id="YuB-Wu-iEL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xO3-zR-Ysr" firstAttribute="centerX" secondItem="nV7-A8-vzQ" secondAttribute="centerX" id="23T-AH-my5"/>
+                            <constraint firstItem="ejd-dh-eh1" firstAttribute="centerX" secondItem="zYX-ce-LGc" secondAttribute="centerX" id="2Y8-oW-TlL"/>
+                            <constraint firstItem="0lU-PS-COx" firstAttribute="leading" secondItem="nV7-A8-vzQ" secondAttribute="leading" constant="277" id="2zC-J5-u3N"/>
+                            <constraint firstItem="MgI-Mo-2y0" firstAttribute="leading" secondItem="nV7-A8-vzQ" secondAttribute="leadingMargin" id="4Yi-AP-fbv"/>
+                            <constraint firstItem="zmj-Ng-Rfz" firstAttribute="top" secondItem="ejd-dh-eh1" secondAttribute="bottom" constant="57" id="5Qn-Qf-OjR"/>
+                            <constraint firstItem="zYX-ce-LGc" firstAttribute="top" secondItem="xO3-zR-Ysr" secondAttribute="bottom" constant="51" id="5vD-J5-kcy"/>
+                            <constraint firstItem="xO3-zR-Ysr" firstAttribute="centerX" secondItem="zYX-ce-LGc" secondAttribute="centerX" id="EeO-8Z-S1d"/>
+                            <constraint firstItem="ejd-dh-eh1" firstAttribute="top" secondItem="0lU-PS-COx" secondAttribute="bottom" constant="84" id="KS7-ar-x7c"/>
+                            <constraint firstItem="MgI-Mo-2y0" firstAttribute="top" secondItem="EYp-v3-e2Z" secondAttribute="bottom" constant="8" symbolic="YES" id="L3d-dN-CVR"/>
+                            <constraint firstItem="xO3-zR-Ysr" firstAttribute="centerX" secondItem="1o6-f6-WvY" secondAttribute="centerX" id="cyh-CV-IhX"/>
+                            <constraint firstItem="1o6-f6-WvY" firstAttribute="centerX" secondItem="VJ3-sO-5eA" secondAttribute="centerX" id="jsJ-kG-eUo"/>
+                            <constraint firstItem="0lU-PS-COx" firstAttribute="top" secondItem="zYX-ce-LGc" secondAttribute="bottom" constant="57" id="t0L-uG-5m6"/>
+                            <constraint firstItem="1o6-f6-WvY" firstAttribute="top" secondItem="VJ3-sO-5eA" secondAttribute="bottom" constant="31" id="x1d-Ds-s9s"/>
+                            <constraint firstItem="xO3-zR-Ysr" firstAttribute="top" secondItem="1o6-f6-WvY" secondAttribute="bottom" constant="33" id="zyn-UI-4nb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6X-My-v5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GLt-2k-Q8n" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="788" y="382"/>
+        </scene>
+        <!--User Info View Controller-->
+        <scene sceneID="HqG-j2-nd7">
+            <objects>
+                <viewController id="nbC-uf-kr6" customClass="UserInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l16-6A-nH1"/>
+                        <viewControllerLayoutGuide type="bottom" id="z63-KA-x2E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kkg-kA-05f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-1d-Dx2">
+                                <rect key="frame" x="22" y="20" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MST-rT-9rb" kind="unwind" unwindAction="unwindToAccountViewController:" id="060-hf-BxI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9p-1H-Enh">
+                                <rect key="frame" x="156" y="91" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AccountName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-bx-u5L">
+                                <rect key="frame" x="215" y="91" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eMail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53m-uz-Sk2">
+                                <rect key="frame" x="156" y="138" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-Xg-rQG">
+                                <rect key="frame" x="215" y="138" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSu-4Y-isc">
+                                <rect key="frame" x="156" y="193" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAQ-7O-d2A">
+                                <rect key="frame" x="247" y="424" width="38" height="30"/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAccountInfo:" destination="nbC-uf-kr6" eventType="touchUpInside" id="D9W-oY-Qjz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgs-lN-O0w">
+                                <rect key="frame" x="277" y="190" width="203" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-41-2Y8">
+                                <rect key="frame" x="277" y="254" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spp-BZ-uE4">
+                                <rect key="frame" x="277" y="314" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountEmail" destination="Hpf-Xg-rQG" id="bWS-a6-ufv"/>
+                        <outlet property="accountName" destination="SbB-bx-u5L" id="NxP-Pi-TEX"/>
+                        <outlet property="oldAccountPassword" destination="Xgs-lN-O0w" id="bfB-dO-HzZ"/>
+                        <outlet property="updateAccountPW" destination="UdL-41-2Y8" id="QEk-Tg-fWn"/>
+                        <outlet property="updateAccountPWRetry" destination="spp-BZ-uE4" id="dD9-gu-o4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9bc-oc-EWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MST-rT-9rb" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="382"/>
         </scene>
     </scenes>
     <resources>

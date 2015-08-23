@@ -59,7 +59,7 @@
     if ([nameField hasText] && [passwordField hasText]) {
         userName = nameField.text;
         password = passwordField.text;
-        
+    
         eMail = emailField.text;
         
         if (![emailField hasText] || [eMail rangeOfString:@"@"].location == NSNotFound) {
@@ -79,11 +79,33 @@
         
         return;
     }
-    //NSString* messageString = [NSString stringWithFormat: @"End of test. Your score is: %d", score];
+    
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Email" message:[NSString stringWithFormat:@"Email: %@", eMail] delegate:self cancelButtonTitle:@"Edit" otherButtonTitles: @"Ok", nil];
     
     [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        return;
+    } else {
+        
+        NSString * storyboardName = @"Main";
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+        [self presentViewController:vc animated:YES completion:nil];
+        
+    }
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    [prefs setObject:userName forKey:@"cardKiveUser"];
+    
+    [prefs setObject:password forKey:@"cardKiveUserPW"];
+    [prefs setObject:eMail forKey:@"cardKiveUserEMail"];
+    [prefs synchronize];
+
 }
 
 @end

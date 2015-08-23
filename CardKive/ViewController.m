@@ -22,8 +22,20 @@ global * myVar; // object of the global class
     
     myVar = [global sharedSingleton];//initialize
     
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    // getting an NSString
+    userName = [prefs stringForKey:@"cardKiveUser"];
+    password = [prefs stringForKey:@"cardKiveUserPW"];
+    eMail = [prefs stringForKey:@"cardKiveUserEMail"];
+    
+    
     if (userName != NULL) {
         loginUserName.text = userName;
+    }
+    
+    if (password != NULL) {
+        loginPassword.text = password;
     }
     
     
@@ -64,6 +76,17 @@ global * myVar; // object of the global class
         [alert show];
         return;
     }
+    
+    userName = loginUserName.text;
+    password = loginPassword.text;
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    [prefs setObject:userName forKey:@"cardKiveUser"];
+    
+    [prefs setObject:password forKey:@"cardKiveUserPW"];
+    [prefs setObject:eMail forKey:@"cardKiveUserEMail"];
+    [prefs synchronize];
     
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];

@@ -24,6 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)unwindSegue
+{
+}
+
 /*
 #pragma mark - Navigation
 
@@ -34,4 +38,8 @@
 }
 */
 
+- (IBAction)cameraButton:(id)sender {
+    
+    
+}
 @end

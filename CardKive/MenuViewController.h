@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
+- (IBAction)cameraButton:(id)sender;
 @end
