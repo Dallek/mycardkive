@@ -62,8 +62,14 @@ global * myVar; // object of the global class
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"\nEnter your User Name and Password, or Register to create a User Name and Password!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [alert show];
-        
+        return;
     }
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 
 @end

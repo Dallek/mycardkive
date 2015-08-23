@@ -7,13 +7,14 @@
 //
 
 #import "RegisterViewController.h"
+#import "global.h"
 
 @interface RegisterViewController ()
 
 @end
 
 @implementation RegisterViewController
-@synthesize checkBoxButton;
+@synthesize checkBoxButton, nameField, passwordField, emailField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +56,32 @@
 
 - (IBAction)createAccount:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Email" message:@"\nEmail: " delegate:self cancelButtonTitle:@"Edit" otherButtonTitles: @"Ok", nil];
+    if ([nameField hasText] && [passwordField hasText]) {
+        userName = nameField.text;
+        password = passwordField.text;
+        
+        eMail = emailField.text;
+        
+        if (![emailField hasText] || [eMail rangeOfString:@"@"].location == NSNotFound) {
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Email" message:@"Please enter a valid email address." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:  nil];
+            
+            [alert show];
+            
+            return;
+        }
+        
+    }else {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Registration Error" message:@"Please enter a valid Username and Password" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [alert show];
+        
+        return;
+    }
+    //NSString* messageString = [NSString stringWithFormat: @"End of test. Your score is: %d", score];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Email" message:[NSString stringWithFormat:@"Email: %@", eMail] delegate:self cancelButtonTitle:@"Edit" otherButtonTitles: @"Ok", nil];
     
     [alert show];
 }

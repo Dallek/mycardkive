@@ -454,6 +454,7 @@
 				3D4463AA1B81490B00F4E05A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D4463AB1B81490B00F4E05A /* Build configuration list for PBXNativeTarget "CardKiveTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				3D4463AD1B81490B00F4E05A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

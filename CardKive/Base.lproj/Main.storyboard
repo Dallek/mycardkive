@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -108,6 +109,51 @@
             </objects>
             <point key="canvasLocation" x="31" y="-308"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="RQo-lJ-0nM">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="YyD-ri-mTp" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fEE-uK-ViV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ffp-ek-qbM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vah-5S-PSY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw6-pc-b7X">
+                                <rect key="frame" x="501" y="28" width="83" height="30"/>
+                                <state key="normal" title="My Account">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bz6-qk-1Q0" kind="presentation" id="JhR-My-3Tu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Y7-uck">
+                                <rect key="frame" x="277" y="120" width="62" height="30"/>
+                                <state key="normal" title="All Cards">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-pS-pk1">
+                                <rect key="frame" x="285" y="232" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" constant="8" symbolic="YES" id="kMZ-1l-tUJ"/>
+                            <constraint firstItem="Vw6-pc-b7X" firstAttribute="trailing" secondItem="Vah-5S-PSY" secondAttribute="trailingMargin" id="rhm-RH-Xyi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plb-zg-Edn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="382"/>
+        </scene>
         <!--Register View Controller-->
         <scene sceneID="q2o-iZ-2uv">
             <objects>
@@ -213,6 +259,24 @@
                 <exit id="cq7-KT-fIF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="788" y="-294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uII-le-zBN">
+            <objects>
+                <viewController id="bz6-qk-1Q0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYp-v3-e2Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="zmj-Ng-Rfz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nV7-A8-vzQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6X-My-v5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="382"/>
         </scene>
     </scenes>
     <resources>
