@@ -12,11 +12,25 @@
 
 @end
 
-@implementation MenuViewController
+@implementation MenuViewController{
+    NSMutableArray *array;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    array = [[NSMutableArray alloc] init];
+    [array addObject:@"This"];
+    [array addObject:@"Shit"];
+    [array addObject:@"Isn't"];
+    [array addObject:@"Working"];
+    [array addObject:@"Yet"];
+    [array addObject:@"But"];
+    [array addObject:@"We're"];
+    [array addObject:@"Getting"];
+    [array addObject:@"Closer"];
+    [array addObject:@"Bitches!!!!"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,8 +52,41 @@
 }
 */
 
+#pragma mark - Camera Methods
 - (IBAction)cameraButton:(id)sender {
     
     
 }
+
+#pragma mark - Collection View Methods
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [array count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: @"Cell" forIndexPath: indexPath];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:100];
+    
+    label.text = [array objectAtIndex: indexPath.row];
+    
+    //border of cell
+    [cell.layer setBorderWidth:2.0f];
+    [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
+    
+    //make cell round
+    [cell.layer setCornerRadius:50.0f];
+    
+    return cell;
+}
+
+
+
 @end
