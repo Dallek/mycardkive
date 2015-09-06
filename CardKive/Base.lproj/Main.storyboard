@@ -161,19 +161,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js8-e2-rI8">
-                                                    <rect key="frame" x="8" y="39" width="84" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js8-e2-rI8">
+                                                    <rect key="frame" x="8" y="78" width="84" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-om-dyB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="leading" secondItem="aUz-Yw-HGQ" secondAttribute="leadingMargin" id="4IR-xD-7V2"/>
-                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="top" secondItem="aUz-Yw-HGQ" secondAttribute="topMargin" constant="31" id="JLf-jI-GhC"/>
-                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="trailing" secondItem="aUz-Yw-HGQ" secondAttribute="trailingMargin" id="bEq-40-0UP"/>
+                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="trailing" secondItem="aUz-Yw-HGQ" secondAttribute="trailingMargin" id="RHG-Yr-Mv2"/>
+                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="top" secondItem="aUz-Yw-HGQ" secondAttribute="topMargin" constant="70" id="da8-Kd-u7R"/>
+                                            <constraint firstItem="Js8-e2-rI8" firstAttribute="leading" secondItem="aUz-Yw-HGQ" secondAttribute="leadingMargin" id="fYT-Oh-rKy"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>

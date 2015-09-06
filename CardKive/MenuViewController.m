@@ -21,16 +21,16 @@
     // Do any additional setup after loading the view.
     
     array = [[NSMutableArray alloc] init];
-    [array addObject:@"This"];
-    [array addObject:@"Shit"];
-    [array addObject:@"Isn't"];
-    [array addObject:@"Working"];
-    [array addObject:@"Yet"];
-    [array addObject:@"But"];
-    [array addObject:@"We're"];
-    [array addObject:@"Getting"];
-    [array addObject:@"Closer"];
-    [array addObject:@"Bitches!!!!"];
+    [array addObject:@"1.jpg"];
+    [array addObject:@"2.jpg"];
+    [array addObject:@"3.jpg"];
+    [array addObject:@"4.jpg"];
+    [array addObject:@"5.jpg"];
+    [array addObject:@"6.jpg"];
+    [array addObject:@"7.jpg"];
+    [array addObject:@"8.jpg"];
+    [array addObject:@"9.jpg"];
+    [array addObject:@"10.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,17 +66,21 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: @"Cell" forIndexPath: indexPath];
-    
+
+    //Update Image Names
     UILabel *label = (UILabel *)[cell viewWithTag:100];
-    
     label.text = [array objectAtIndex: indexPath.row];
     
+    //Display Images
+    UIImageView *image = (UIImageView *)[cell viewWithTag:200];
+    image.image = [UIImage imageNamed:[array objectAtIndex:indexPath.row]];
+    
     //border of cell
-    [cell.layer setBorderWidth:2.0f];
+    [cell.layer setBorderWidth:1.0f];
     [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
     
     //make cell round
-    [cell.layer setCornerRadius:50.0f];
+    //[cell.layer setCornerRadius:50.0f];
     
     return cell;
 }
@@ -84,16 +88,28 @@
 #pragma mark Open Photo Library
 - (IBAction)selectPhoto:(UIButton *)sender {
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc]init];
+//    imagePickerController.delegate = self;
+    imagePickerController.sourceType =  UIImagePickerControllerSourceTypePhotoLibrary;
     
-    [self presentViewController:picker animated:YES completion:NULL];
+    [self presentViewController:imagePickerController animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingImage:(UIImage *)image
+editingInfo:(NSDictionary *)editingInfo
+{
+    
+    // Dismiss the image selection, hide the picker and
+    
+    //show the image view with the picked image
+    
+//    [picker dismissModalViewControllerAnimated:YES];
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    //UIImage *newImage = image;
     
     
 }
-
 
 
 

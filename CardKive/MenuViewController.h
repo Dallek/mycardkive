@@ -10,7 +10,6 @@
 
 @interface MenuViewController : UIViewController < UICollectionViewDelegate, UICollectionViewDataSource>
 
-
 - (IBAction)selectPhoto:(id)sender;
 
 @end
