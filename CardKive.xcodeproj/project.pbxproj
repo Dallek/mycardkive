@@ -18,6 +18,7 @@
 		3D4463B81B816E7100F4E05A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463B71B816E7100F4E05A /* RegisterViewController.m */; };
 		3D4463BB1B816EB200F4E05A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463BA1B816EB200F4E05A /* MenuViewController.m */; };
 		3D4463BE1B81723E00F4E05A /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4463BD1B81723E00F4E05A /* global.m */; };
+		3D8BF2891B9BB59D00CEAFC3 /* cameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8BF2881B9BB59D00CEAFC3 /* cameraViewController.m */; };
 		3D9FF5E01B8A38E50042EC2C /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FF5DF1B8A38E50042EC2C /* AccountViewController.m */; };
 		3D9FF5E21B8A42280042EC2C /* Policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9FF5E11B8A42280042EC2C /* Policy.pdf */; };
 		3D9FF5E41B8A460F0042EC2C /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FF5E31B8A460F0042EC2C /* QuickLook.framework */; };
@@ -56,6 +57,8 @@
 		3D4463BA1B816EB200F4E05A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		3D4463BC1B81723E00F4E05A /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		3D4463BD1B81723E00F4E05A /* global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = global.m; sourceTree = "<group>"; };
+		3D8BF2871B9BB59D00CEAFC3 /* cameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraViewController.h; sourceTree = "<group>"; };
+		3D8BF2881B9BB59D00CEAFC3 /* cameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cameraViewController.m; sourceTree = "<group>"; };
 		3D9FF5DE1B8A38E50042EC2C /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
 		3D9FF5DF1B8A38E50042EC2C /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
 		3D9FF5E11B8A42280042EC2C /* Policy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Policy.pdf; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				3D9FF5DF1B8A38E50042EC2C /* AccountViewController.m */,
 				3D9FF5E51B8A4CDE0042EC2C /* UserInfoViewController.h */,
 				3D9FF5E61B8A4CDE0042EC2C /* UserInfoViewController.m */,
+				3D8BF2871B9BB59D00CEAFC3 /* cameraViewController.h */,
+				3D8BF2881B9BB59D00CEAFC3 /* cameraViewController.m */,
 				3D9FF5E81B8A51F20042EC2C /* Main.storyboard */,
 				3D4463951B81490B00F4E05A /* Images.xcassets */,
 				3D4463971B81490B00F4E05A /* LaunchScreen.xib */,
@@ -214,6 +219,7 @@
 				TargetAttributes = {
 					3D4463841B81490B00F4E05A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = A9HC5S4EM6;
 					};
 					3D44639D1B81490B00F4E05A = {
 						CreatedOnToolsVersion = 6.4;
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4463911B81490B00F4E05A /* ViewController.m in Sources */,
+				3D8BF2891B9BB59D00CEAFC3 /* cameraViewController.m in Sources */,
 				3D44638E1B81490B00F4E05A /* AppDelegate.m in Sources */,
 				3D9FF5E01B8A38E50042EC2C /* AccountViewController.m in Sources */,
 				3D4463BE1B81723E00F4E05A /* global.m in Sources */,
@@ -403,9 +410,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,9 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

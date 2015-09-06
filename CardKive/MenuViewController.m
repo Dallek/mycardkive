@@ -52,12 +52,6 @@
 }
 */
 
-#pragma mark - Camera Methods
-- (IBAction)cameraButton:(id)sender {
-    
-    
-}
-
 #pragma mark - Collection View Methods
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -86,6 +80,20 @@
     
     return cell;
 }
+
+#pragma mark Open Photo Library
+- (IBAction)selectPhoto:(UIButton *)sender {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+    
+}
+
 
 
 
