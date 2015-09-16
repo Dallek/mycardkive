@@ -103,7 +103,7 @@
 
 - (IBAction)logOut:(id)sender {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log Out" message:@"Come back at any time to view your memeories!  We'll keep them handy!" delegate:self cancelButtonTitle:@"Wait!" otherButtonTitles: @"Log Out", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Log Out" message:@"Come back at any time to view your memories!  We'll keep them handy!" delegate:self cancelButtonTitle:@"Wait!" otherButtonTitles: @"Log Out", nil];
     alert.tag = TAG_Logout;
     [alert show];
 
@@ -117,6 +117,15 @@
         
         userName = NULL;
         password = NULL;
+        eMail = NULL;
+        
+        NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+        
+        [prefs setObject:userName forKey:@"cardKiveUser"];
+        
+        [prefs setObject:password forKey:@"cardKiveUserPW"];
+        [prefs setObject:eMail forKey:@"cardKiveUserEMail"];
+        [prefs synchronize];
         
         NSString * storyboardName = @"Main";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];

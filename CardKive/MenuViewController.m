@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "global.h"
 
 @interface MenuViewController ()
 
@@ -83,6 +84,20 @@
     //[cell.layer setCornerRadius:50.0f];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    image = [array objectAtIndex:indexPath.row];
+    
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"displayCardViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+
+    
 }
 
 #pragma mark Open Photo Library

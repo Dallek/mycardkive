@@ -28,16 +28,21 @@ global * myVar; // object of the global class
     userName = [prefs stringForKey:@"cardKiveUser"];
     password = [prefs stringForKey:@"cardKiveUserPW"];
     eMail = [prefs stringForKey:@"cardKiveUserEMail"];
+    keepLogin = [prefs stringForKey:@"keepLoggedIn"];
     
     
-    if (userName != NULL) {
-        loginUserName.text = userName;
+    if ([keepLogin isEqualToString:@"YES"]) {
+    
+        if (userName != NULL) {
+            loginUserName.text = userName;
+        }
+    
+        if (password != NULL) {
+            loginPassword.text = password;
+        }
+        
+        checkBoxButton.image = [UIImage imageNamed:@"checkbox.png"];
     }
-    
-    if (password != NULL) {
-        loginPassword.text = password;
-    }
-    
     
 }
 
@@ -55,10 +60,12 @@ global * myVar; // object of the global class
     if (!checked) {
         checkBoxButton.image = [UIImage imageNamed:@"checkbox.png"];
         checked = YES;
+        keepLogin = @"YES";
     }else if (checked)
     {
         checkBoxButton.image = [UIImage imageNamed:@"checkbox_unchecked.png"];
         checked = NO;
+        keepLogin = @"NO";
     }
 }
 
@@ -81,11 +88,10 @@ global * myVar; // object of the global class
     password = loginPassword.text;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    
     [prefs setObject:userName forKey:@"cardKiveUser"];
-    
     [prefs setObject:password forKey:@"cardKiveUserPW"];
     [prefs setObject:eMail forKey:@"cardKiveUserEMail"];
+    [prefs setObject:keepLogin forKey:@"keepLoggedIn"];
     [prefs synchronize];
     
     NSString * storyboardName = @"Main";

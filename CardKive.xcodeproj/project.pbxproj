@@ -34,6 +34,8 @@
 		3D9FF5E41B8A460F0042EC2C /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9FF5E31B8A460F0042EC2C /* QuickLook.framework */; };
 		3D9FF5E71B8A4CDE0042EC2C /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FF5E61B8A4CDE0042EC2C /* UserInfoViewController.m */; };
 		3D9FF5EA1B8A51F20042EC2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9FF5E81B8A51F20042EC2C /* Main.storyboard */; };
+		EBD9D1981BA2312800172CAC /* displayCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD9D1971BA2312800172CAC /* displayCardViewController.m */; };
+		EBD9D19A1BA9FB0200172CAC /* open.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBD9D1991BA9FB0200172CAC /* open.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,9 @@
 		3D9FF5E51B8A4CDE0042EC2C /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		3D9FF5E61B8A4CDE0042EC2C /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		3D9FF5E91B8A51F20042EC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBD9D1961BA2312800172CAC /* displayCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = displayCardViewController.h; path = ../displayCardViewController.h; sourceTree = "<group>"; };
+		EBD9D1971BA2312800172CAC /* displayCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = displayCardViewController.m; path = ../displayCardViewController.m; sourceTree = "<group>"; };
+		EBD9D1991BA9FB0200172CAC /* open.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = open.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,8 @@
 				3D4463B71B816E7100F4E05A /* RegisterViewController.m */,
 				3D4463B91B816EB200F4E05A /* MenuViewController.h */,
 				3D4463BA1B816EB200F4E05A /* MenuViewController.m */,
+				EBD9D1961BA2312800172CAC /* displayCardViewController.h */,
+				EBD9D1971BA2312800172CAC /* displayCardViewController.m */,
 				3D9FF5DE1B8A38E50042EC2C /* AccountViewController.h */,
 				3D9FF5DF1B8A38E50042EC2C /* AccountViewController.m */,
 				3D9FF5E51B8A4CDE0042EC2C /* UserInfoViewController.h */,
@@ -194,6 +201,7 @@
 		3D8BF28A1B9BD5FA00CEAFC3 /* TempCards */ = {
 			isa = PBXGroup;
 			children = (
+				EBD9D1991BA9FB0200172CAC /* open.jpeg */,
 				3D8BF28B1B9BD60B00CEAFC3 /* 10.jpg */,
 				3D8BF28C1B9BD60B00CEAFC3 /* 1.jpg */,
 				3D8BF28D1B9BD60B00CEAFC3 /* 6.jpg */,
@@ -305,6 +313,7 @@
 				3D8BF29C1B9BD60B00CEAFC3 /* 5.jpg in Resources */,
 				3D4463961B81490B00F4E05A /* Images.xcassets in Resources */,
 				3D9FF5E21B8A42280042EC2C /* Policy.pdf in Resources */,
+				EBD9D19A1BA9FB0200172CAC /* open.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +336,7 @@
 				3D44638E1B81490B00F4E05A /* AppDelegate.m in Sources */,
 				3D9FF5E01B8A38E50042EC2C /* AccountViewController.m in Sources */,
 				3D4463BE1B81723E00F4E05A /* global.m in Sources */,
+				EBD9D1981BA2312800172CAC /* displayCardViewController.m in Sources */,
 				3D44638B1B81490B00F4E05A /* main.m in Sources */,
 				3D9FF5E71B8A4CDE0042EC2C /* UserInfoViewController.m in Sources */,
 				3D4463B81B816E7100F4E05A /* RegisterViewController.m in Sources */,

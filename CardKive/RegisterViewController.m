@@ -14,7 +14,7 @@
 @end
 
 @implementation RegisterViewController
-@synthesize checkBoxButton, nameField, passwordField, emailField;
+@synthesize checkBoxButton, nameField, passwordField, retypePasswordField, emailField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,10 +47,13 @@
     if (!checked) {
         checkBoxButton.image = [UIImage imageNamed:@"checkbox.png"];
         checked = YES;
+        keepLogin = @"YES";
+        
     }else if (checked)
     {
         checkBoxButton.image = [UIImage imageNamed:@"checkbox_unchecked.png"];
         checked = NO;
+        keepLogin = @"NO";
     }
 }
 
@@ -59,7 +62,6 @@
     if ([nameField hasText] && [passwordField hasText]) {
         userName = nameField.text;
         password = passwordField.text;
-    
         eMail = emailField.text;
         
         if (![emailField hasText] || [eMail rangeOfString:@"@"].location == NSNotFound) {
@@ -80,6 +82,14 @@
         return;
     }
     
+    if (![passwordField.text isEqualToString: retypePasswordField.text]) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Registration Error" message:@"Your Passwords do not match!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [alert show];
+        
+        return;
+    }
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Confirm Email" message:[NSString stringWithFormat:@"Email: %@", eMail] delegate:self cancelButtonTitle:@"Edit" otherButtonTitles: @"Ok", nil];
     
@@ -90,6 +100,13 @@
     if (buttonIndex == 0) {
         return;
     } else {
+        
+        if ([keepLogin isEqualToString:@"YES"]) {
+            NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+            
+            [prefs setObject:keepLogin forKey:@"keepLoggedIn"];
+            [prefs synchronize];
+        }
         
         NSString * storyboardName = @"Main";
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
