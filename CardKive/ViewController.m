@@ -84,10 +84,20 @@ global * myVar; // object of the global class
         return;
     }
     
+    
+    if (userName == nil || password == nil || eMail == nil) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"\nEnter a valid User Name and Password, or Register to create a User Name and Password!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        
+        [alert show];
+
+        return;
+    }
+    
     userName = loginUserName.text;
     password = loginPassword.text;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
     [prefs setObject:userName forKey:@"cardKiveUser"];
     [prefs setObject:password forKey:@"cardKiveUserPW"];
     [prefs setObject:eMail forKey:@"cardKiveUserEMail"];
