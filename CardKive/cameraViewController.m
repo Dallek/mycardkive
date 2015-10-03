@@ -33,7 +33,7 @@ AVCaptureStillImageOutput *StillImageOutput;
         [myAlertView show];
         
     }
-    
+        
 }
 
 - (void)didReceiveMemoryWarning {

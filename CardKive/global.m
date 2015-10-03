@@ -14,6 +14,7 @@ NSString *password = NULL;
 NSString *eMail = NULL;
 NSString *keepLogin = NULL;
 NSString *image = NULL;
+NSArray *array = NULL;
 
 @implementation global
 
