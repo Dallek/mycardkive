@@ -37,6 +37,16 @@
 		EB3114FB1BB3875F0095EE29 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3114FA1BB3875F0095EE29 /* Accelerate.framework */; };
 		EB3114FD1BB387680095EE29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3114FC1BB387680095EE29 /* CoreGraphics.framework */; };
 		EB3114FF1BB387700095EE29 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3114FE1BB387700095EE29 /* CoreImage.framework */; };
+		EBA03B971BC337D0002B8722 /* 60x60_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B931BC337D0002B8722 /* 60x60_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03B981BC337D0002B8722 /* 29x29_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B941BC337D0002B8722 /* 29x29_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03B991BC337D0002B8722 /* 76x76_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B951BC337D0002B8722 /* 76x76_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03B9A1BC337D0002B8722 /* 40x40_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B961BC337D0002B8722 /* 40x40_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03B9F1BC33A88002B8722 /* 80x80_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B9B1BC33A88002B8722 /* 80x80_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03BA01BC33A88002B8722 /* 180x180_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B9C1BC33A88002B8722 /* 180x180_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03BA11BC33A88002B8722 /* 120x120_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B9D1BC33A88002B8722 /* 120x120_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03BA21BC33A88002B8722 /* 152x152_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03B9E1BC33A88002B8722 /* 152x152_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03BA51BC33A99002B8722 /* 58x58_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03BA31BC33A99002B8722 /* 58x58_logo.png */; settings = {ASSET_TAGS = (); }; };
+		EBA03BA61BC33A99002B8722 /* 87x87_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA03BA41BC33A99002B8722 /* 87x87_logo.png */; settings = {ASSET_TAGS = (); }; };
 		EBD9D19A1BA9FB0200172CAC /* open.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EBD9D1991BA9FB0200172CAC /* open.jpeg */; };
 		EBE25B231BB478AB004D870E /* cardEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE25B221BB478AB004D870E /* cardEditViewController.m */; settings = {ASSET_TAGS = (); }; };
 		EBE25B2F1BB47970004D870E /* CLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBE25B251BB47970004D870E /* CLImageEditor.bundle */; settings = {ASSET_TAGS = (); }; };
@@ -132,6 +142,16 @@
 		EB3114FA1BB3875F0095EE29 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		EB3114FC1BB387680095EE29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EB3114FE1BB387700095EE29 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		EBA03B931BC337D0002B8722 /* 60x60_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60x60_logo.png; sourceTree = "<group>"; };
+		EBA03B941BC337D0002B8722 /* 29x29_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29x29_logo.png; sourceTree = "<group>"; };
+		EBA03B951BC337D0002B8722 /* 76x76_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76x76_logo.png; sourceTree = "<group>"; };
+		EBA03B961BC337D0002B8722 /* 40x40_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40x40_logo.png; sourceTree = "<group>"; };
+		EBA03B9B1BC33A88002B8722 /* 80x80_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80x80_logo.png; sourceTree = "<group>"; };
+		EBA03B9C1BC33A88002B8722 /* 180x180_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180x180_logo.png; sourceTree = "<group>"; };
+		EBA03B9D1BC33A88002B8722 /* 120x120_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120x120_logo.png; sourceTree = "<group>"; };
+		EBA03B9E1BC33A88002B8722 /* 152x152_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152x152_logo.png; sourceTree = "<group>"; };
+		EBA03BA31BC33A99002B8722 /* 58x58_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58x58_logo.png; sourceTree = "<group>"; };
+		EBA03BA41BC33A99002B8722 /* 87x87_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87x87_logo.png; sourceTree = "<group>"; };
 		EBD9D1991BA9FB0200172CAC /* open.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = open.jpeg; sourceTree = "<group>"; };
 		EBE25B211BB478AB004D870E /* cardEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cardEditViewController.h; sourceTree = "<group>"; };
 		EBE25B221BB478AB004D870E /* cardEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cardEditViewController.m; sourceTree = "<group>"; };
@@ -315,6 +335,7 @@
 		3D4463B21B815F8B00F4E05A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBA03B921BC337B5002B8722 /* AppIcons */,
 				3D8BF28A1B9BD5FA00CEAFC3 /* TempCards */,
 				3D4463AE1B815F8200F4E05A /* checkbox_unchecked.png */,
 				EBE25BA41BBEEB15004D870E /* 0.png */,
@@ -339,6 +360,23 @@
 				3D8BF2941B9BD60B00CEAFC3 /* 7.jpg */,
 			);
 			name = TempCards;
+			sourceTree = "<group>";
+		};
+		EBA03B921BC337B5002B8722 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				EBA03BA31BC33A99002B8722 /* 58x58_logo.png */,
+				EBA03BA41BC33A99002B8722 /* 87x87_logo.png */,
+				EBA03B9B1BC33A88002B8722 /* 80x80_logo.png */,
+				EBA03B9C1BC33A88002B8722 /* 180x180_logo.png */,
+				EBA03B9D1BC33A88002B8722 /* 120x120_logo.png */,
+				EBA03B9E1BC33A88002B8722 /* 152x152_logo.png */,
+				EBA03B931BC337D0002B8722 /* 60x60_logo.png */,
+				EBA03B941BC337D0002B8722 /* 29x29_logo.png */,
+				EBA03B951BC337D0002B8722 /* 76x76_logo.png */,
+				EBA03B961BC337D0002B8722 /* 40x40_logo.png */,
+			);
+			name = AppIcons;
 			sourceTree = "<group>";
 		};
 		EBE25B241BB47960004D870E /* CLIImageEditor */ = {
@@ -580,7 +618,7 @@
 		3D44637D1B81490B00F4E05A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = 99Ideas;
 				TargetAttributes = {
 					3D4463841B81490B00F4E05A = {
@@ -617,23 +655,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA03B981BC337D0002B8722 /* 29x29_logo.png in Resources */,
 				EBE25BA51BBEEB15004D870E /* 0.png in Resources */,
 				3D8BF29D1B9BD60B00CEAFC3 /* 3.jpg in Resources */,
+				EBA03BA21BC33A88002B8722 /* 152x152_logo.png in Resources */,
 				3D8BF29B1B9BD60B00CEAFC3 /* 9.jpg in Resources */,
 				EBE25B2F1BB47970004D870E /* CLImageEditor.bundle in Resources */,
 				3D8BF29A1B9BD60B00CEAFC3 /* 4.jpg in Resources */,
+				EBA03B9A1BC337D0002B8722 /* 40x40_logo.png in Resources */,
 				3D8BF2991B9BD60B00CEAFC3 /* 8.jpg in Resources */,
+				EBA03BA61BC33A99002B8722 /* 87x87_logo.png in Resources */,
 				3D8BF2971B9BD60B00CEAFC3 /* 6.jpg in Resources */,
+				EBA03B9F1BC33A88002B8722 /* 80x80_logo.png in Resources */,
+				EBA03BA51BC33A99002B8722 /* 58x58_logo.png in Resources */,
 				3D4463B11B815F8200F4E05A /* checkbox.png in Resources */,
 				3D8BF2981B9BD60B00CEAFC3 /* 2.jpg in Resources */,
 				3D8BF2951B9BD60B00CEAFC3 /* 10.jpg in Resources */,
+				EBA03BA01BC33A88002B8722 /* 180x180_logo.png in Resources */,
+				EBA03B991BC337D0002B8722 /* 76x76_logo.png in Resources */,
 				3D4463B01B815F8200F4E05A /* checkbox_unchecked.png in Resources */,
 				3D4463991B81490B00F4E05A /* LaunchScreen.xib in Resources */,
+				EBA03BA11BC33A88002B8722 /* 120x120_logo.png in Resources */,
 				3D9FF5EA1B8A51F20042EC2C /* Main.storyboard in Resources */,
 				3D8BF29E1B9BD60B00CEAFC3 /* 7.jpg in Resources */,
 				3D8BF2961B9BD60B00CEAFC3 /* 1.jpg in Resources */,
 				3D8BF29C1B9BD60B00CEAFC3 /* 5.jpg in Resources */,
 				3D4463961B81490B00F4E05A /* Images.xcassets in Resources */,
+				EBA03B971BC337D0002B8722 /* 60x60_logo.png in Resources */,
 				3D9FF5E21B8A42280042EC2C /* Policy.pdf in Resources */,
 				EBD9D19A1BA9FB0200172CAC /* open.jpeg in Resources */,
 			);
@@ -758,6 +806,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -827,6 +876,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycardkive.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -841,6 +891,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CardKive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycardkive.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -861,6 +912,7 @@
 				);
 				INFOPLIST_FILE = CardKiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycardkive.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardKive.app/CardKive";
 			};
@@ -876,6 +928,7 @@
 				);
 				INFOPLIST_FILE = CardKiveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mycardkive.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardKive.app/CardKive";
 			};
