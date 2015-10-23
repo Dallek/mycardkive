@@ -22,7 +22,6 @@
     // Do any additional setup after loading the view.
     
     array = [[NSMutableArray alloc] init];
-    [array addObject:@"0.png"];
     [array addObject:@"1.jpg"];
     [array addObject:@"2.jpg"];
     [array addObject:@"3.jpg"];
@@ -33,6 +32,27 @@
     [array addObject:@"8.jpg"];
     [array addObject:@"9.jpg"];
     [array addObject:@"10.jpg"];
+    
+    
+    array2 = [[NSMutableArray alloc] init];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+    [array2 addObject:@"open.jpg"];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    //reload visible content on screen - doesnt work with camera
+//    [self.collectionView reloadItemsAtIndexPaths:[self.collectionView indexPathsForVisibleItems]];
+
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,16 +90,16 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: @"Cell" forIndexPath: indexPath];
 
     UIImageView *image = (UIImageView *)[cell viewWithTag:200];
-    UILabel *label = (UILabel *)[cell viewWithTag:100];
+//    UILabel *label = (UILabel *)[cell viewWithTag:100];
    
     //border of cell
-    [cell.layer setBorderWidth:1.0f];
-    [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
+//    [cell.layer setBorderWidth:1.0f];
+//    [cell.layer setBorderColor:[UIColor whiteColor].CGColor];
     
     //make cell round
     //[cell.layer setCornerRadius:50.0f];
     
-    if (indexPath.row >= 11) {
+    if (indexPath.row >= 10) {
         //Display Images
         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
         [library assetForURL:[array objectAtIndex:indexPath.row] resultBlock:^(ALAsset *asset) {
@@ -89,18 +109,6 @@
         }];
         
     }else{
-    
-        if (indexPath.row == 0) {
-            label.text = @"Add Card";
-            [cell.layer setBorderWidth:0.0f];
-            
-        }else{
-            //Update Image Names
-            //label.text = [array objectAtIndex: indexPath.row];
-
-            label.text = @"";
-        }
-    
         //Display Images
         image.image = [UIImage imageNamed:[array objectAtIndex:indexPath.row]];
     }
@@ -111,28 +119,27 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row >= 11) {
-        image = [NSString stringWithFormat:@"%ld",(long)indexPath.row]; //[[array objectAtIndex:indexPath.row] lastPathComponent];
+/*    if (indexPath.row >= 11) {
+        indexCell = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+        //[[array objectAtIndex:indexPath.row] lastPathComponent];
     }else {
-        image = [array objectAtIndex:indexPath.row];
+        indexCell = [array objectAtIndex:indexPath.row];
     }
+    */
     
-    if ([image isEqualToString:@"0.png"]) {
-        
-        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
-        
-        [sheet showInView:self.view.window];
-        
-        return;
-    }
+    indexCell = indexPath.row;
     
     NSString * storyboardName = @"Main";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"cardEditViewController"];
     [self presentViewController:vc animated:YES completion:nil];
     
+}
 
-    
+#pragma mark – UICollectionViewDelegateFlowLayout
+- (UIEdgeInsets)collectionView:
+(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(15, 3, 15, 3);
 }
 
 #pragma mark- Actionsheet delegate
@@ -178,6 +185,10 @@
     
     [self presentViewController:imagePickerController animated:YES completion:NULL];
 */
+    
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
+    
+    [sheet showInView:self.view.window];
  }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

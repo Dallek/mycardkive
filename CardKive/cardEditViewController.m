@@ -23,20 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if (![image containsString:@".jpg"] ) {
+    if ((int)indexCell >= 10) {
             //Display Images
-        int count = 11;
-        count = [image intValue];
-        
-   
             ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-            [library assetForURL:[array objectAtIndex:count] resultBlock:^(ALAsset *asset) {
+            [library assetForURL:[array objectAtIndex:(int)indexCell] resultBlock:^(ALAsset *asset) {
                 _imageView.image = [UIImage imageWithCGImage:[[asset defaultRepresentation] fullResolutionImage]];
             } failureBlock:^(NSError *error) {
                 NSLog(@"error : %@", error);
             }];
+        
     }else{
-        _imageView.image =[UIImage imageNamed: image];
+        _imageView.image = [UIImage imageNamed:[array objectAtIndex:(int)indexCell]];
     }
     
     _imageView.hidden = NO;
@@ -81,16 +78,28 @@
     return NO;
 }
 
+/*
 - (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait;
 }
+*/
 
 - (void)pushedNewBtn
 {
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Camera", @"Photo Library", nil];
     [sheet showInView:self.view.window];
     
+}
+
+- (void)pushedRemoveBtn
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Remove"
+                                                    message:@"This will remove the Card from your Collection.  Do you wish to proceed?"
+                                                   delegate:self
+                                          cancelButtonTitle:@"NO"
+                                          otherButtonTitles:@"YES", nil];
+    [alert show];
 }
 
 - (void)pushedEditBtn
@@ -155,6 +164,16 @@
     }
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        return;
+    } else {
+        [array removeObjectAtIndex:(long)indexCell];
+    }
+    
+    
+}
+
 #pragma mark- ImagePicker delegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -195,7 +214,8 @@
     
     switch (item.tag) {
         case 0:
-            [self pushedNewBtn];
+            //[self pushedNewBtn];
+            [self pushedRemoveBtn];
             break;
         case 1:
             [self pushedEditBtn];

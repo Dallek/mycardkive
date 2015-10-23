@@ -28,8 +28,9 @@ global * myVar; // object of the global class
     userName = [prefs stringForKey:@"cardKiveUser"];
     password = [prefs stringForKey:@"cardKiveUserPW"];
     eMail = [prefs stringForKey:@"cardKiveUserEMail"];
-    keepLogin = [prefs stringForKey:@"keepLoggedIn"];
-    
+//    keepLogin = [prefs stringForKey:@"keepLoggedIn"];
+  
+    keepLogin = @"YES";
     
     if ([keepLogin isEqualToString:@"YES"]) {
     
@@ -75,6 +76,15 @@ global * myVar; // object of the global class
     
     [alert show];
 }
+
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [loginPassword resignFirstResponder];
+    [loginUserName resignFirstResponder];
+}
+
+
 - (IBAction)loginButton:(id)sender {
     if (![loginPassword hasText] || ![loginUserName hasText])
     {

@@ -96,6 +96,16 @@
     [alert show];
 }
 
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [nameField resignFirstResponder];
+    [passwordField resignFirstResponder];
+    [retypePasswordField resignFirstResponder];
+    [emailField resignFirstResponder];
+
+}
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0) {
         return;

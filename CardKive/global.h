@@ -13,8 +13,9 @@ extern NSString *userName;
 extern NSString *password;
 extern NSString *eMail;
 extern NSString *keepLogin;
-extern NSString *image;
+extern NSUInteger *indexCell;
 extern NSMutableArray *array;
+extern NSMutableArray *array2;
 
 @interface global : NSObject{
     NSString *var1; //singleton

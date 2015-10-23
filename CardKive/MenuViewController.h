@@ -10,6 +10,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface MenuViewController : UIViewController < UICollectionViewDelegate, UICollectionViewDataSource, UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 - (IBAction)selectPhoto:(id)sender;

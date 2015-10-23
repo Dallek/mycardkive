@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <ImageIO/CGImageProperties.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface cameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {

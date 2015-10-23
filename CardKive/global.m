@@ -13,8 +13,9 @@ NSString *userName = NULL;
 NSString *password = NULL;
 NSString *eMail = NULL;
 NSString *keepLogin = NULL;
-NSString *image = NULL;
-NSArray *array = NULL;
+NSUInteger *indexCell = NULL;
+NSMutableArray *array = NULL;
+NSMutableArray *array2 = NULL;
 
 @implementation global
 

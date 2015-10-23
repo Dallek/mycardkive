@@ -7,6 +7,7 @@
 //
 
 #import "cameraViewController.h"
+#import "global.h"
 
 @interface cameraViewController ()
 
@@ -103,8 +104,27 @@ AVCaptureStillImageOutput *StillImageOutput;
     [StillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
         if (imageDataSampleBuffer != NULL) {
             NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
-            UIImage *image = [UIImage imageWithData:imageData];
-            imageView.image = image;
+            UIImage *viewImage = [UIImage imageWithData:imageData];
+            imageView.image = viewImage;
+            
+            ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+            // Request to save the image to camera roll
+            [library writeImageToSavedPhotosAlbum:[viewImage CGImage] orientation:(ALAssetOrientation)[viewImage imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
+                if (error) {
+                    NSLog(@"error");
+                } else {
+                    NSLog(@"url %@", assetURL);
+
+                    [array addObject:assetURL];
+                    
+
+                }
+            }];
+       
+            //Save to Camera Roll
+            //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+            
+            
         }
     }];
      
