@@ -17,7 +17,8 @@
 
 AVCaptureSession *session;
 AVCaptureStillImageOutput *StillImageOutput;
-
+BOOL frontImageTaken = FALSE;
+BOOL insideImageTaken = FALSE;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -89,7 +90,9 @@ AVCaptureStillImageOutput *StillImageOutput;
 */
 
 #pragma mark Camera Functions
-- (IBAction)takePhoto:(UIButton *)sender {
+- (IBAction)takeFrontPhoto:(UIButton *)sender {
+    
+    frontImageTaken = TRUE;
     
     AVCaptureConnection *videoConnection = nil;
     for (AVCaptureConnection *connection in StillImageOutput.connections){
@@ -105,29 +108,78 @@ AVCaptureStillImageOutput *StillImageOutput;
         if (imageDataSampleBuffer != NULL) {
             NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
             UIImage *viewImage = [UIImage imageWithData:imageData];
-            imageView.image = viewImage;
-            
-            ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-            // Request to save the image to camera roll
-            [library writeImageToSavedPhotosAlbum:[viewImage CGImage] orientation:(ALAssetOrientation)[viewImage imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
-                if (error) {
-                    NSLog(@"error");
-                } else {
-                    NSLog(@"url %@", assetURL);
-
-                    [array addObject:assetURL];
-                    
-
-                }
-            }];
-       
-            //Save to Camera Roll
-            //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-            
+            frontCardView.image = viewImage;
             
         }
     }];
      
+}
+
+
+- (IBAction)takeInsidePhoto:(UIButton *)sender {
+    
+    insideImageTaken = TRUE;
+    
+    AVCaptureConnection *videoConnection = nil;
+    for (AVCaptureConnection *connection in StillImageOutput.connections){
+        for (AVCaptureInputPort *port in [connection inputPorts]){
+            if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
+                videoConnection = connection;
+                break;
+            }
+        }
+    }
+    
+    [StillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+        if (imageDataSampleBuffer != NULL) {
+            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+            UIImage *viewImage = [UIImage imageWithData:imageData];
+            insideCardView.image = viewImage;
+            
+        }
+    }];
+}
+
+
+- (IBAction)createCard:(id)sender{
+    
+    if (frontImageTaken && insideImageTaken)
+    {
+        //Save Front Card View
+        [self dismissViewControllerAnimated: YES completion: nil];
+        
+        ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+        // Request to save the image to camera roll
+        [library writeImageToSavedPhotosAlbum:[frontCardView.image CGImage] orientation:(ALAssetOrientation)[frontCardView.image imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
+            if (error) {
+                NSLog(@"error");
+            } else {
+                NSLog(@"url %@", assetURL);
+                [array addObject:assetURL];
+            }
+        }];
+        
+        //Save Inside Card View
+        [library writeImageToSavedPhotosAlbum:[insideCardView.image CGImage] orientation:(ALAssetOrientation)[insideCardView.image imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
+            if (error) {
+                NSLog(@"error");
+            } else {
+                NSLog(@"url %@", assetURL);
+                [array2 addObject:assetURL];
+            }
+        }];
+
+    }else {
+    
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"New Card"
+                                                    message:@"Please Add both a Cover and Inside for your card!"
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    return;
 }
 
 @end

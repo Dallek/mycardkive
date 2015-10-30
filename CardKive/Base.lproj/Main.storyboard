@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,9 +19,11 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_login.png" translatesAutoresizingMaskIntoConstraints="NO" id="ChR-XZ-3GW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJ8-vz-DeC">
                                 <rect key="frame" x="49" y="623" width="288" height="25"/>
+                                <animations/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle"/>
                                 </state>
@@ -32,11 +33,13 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2zG-YN-mER">
                                 <rect key="frame" x="93" y="367" width="200" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0e-xW-lCe">
                                 <rect key="frame" x="55" y="442" width="266" height="53"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -47,9 +50,11 @@
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkbox_unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="S9d-Ih-ZPI">
                                 <rect key="frame" x="60" y="202" width="35" height="29"/>
+                                <animations/>
                             </imageView>
                             <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-n9-RUy">
                                 <rect key="frame" x="69" y="208" width="191" height="29"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Keep Me Logged In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,11 +66,13 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNJ-M2-GNg">
                                 <rect key="frame" x="93" y="316" width="200" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJC-y9-BhM">
                                 <rect key="frame" x="67" y="506" width="241" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,6 +83,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -103,15 +111,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue background.png" translatesAutoresizingMaskIntoConstraints="NO" id="uvA-Hb-3zm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-pS-pk1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4e-pS-pk1">
                                 <rect key="frame" x="173" y="232" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-tS-6x3">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fy4-tS-6x3">
                                 <rect key="frame" x="16" y="60" width="343" height="549"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rIg-x3-4bh">
                                     <size key="itemSize" width="100" height="100"/>
@@ -129,11 +140,14 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="200" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-om-dyB">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <animations/>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -141,11 +155,9 @@
                                     <outlet property="delegate" destination="YyD-ri-mTp" id="tyv-B9-SIz"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Y7-uck">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0p-Y7-uck">
                                 <rect key="frame" x="16" y="20" width="109" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="8Xx-zc-8fC"/>
-                                </constraints>
+                                <animations/>
                                 <state key="normal" title="Filter:  All Cards">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,6 +165,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vw6-pc-b7X">
                                 <rect key="frame" x="272" y="20" width="83" height="30"/>
+                                <animations/>
                                 <state key="normal" title="My Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +175,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTq-x2-zwJ">
-                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <rect key="frame" x="20" y="608" width="335" height="42"/>
+                                <animations/>
                                 <state key="normal" title="Add Card" backgroundImage="bg_cork.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -171,16 +185,8 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="s4e-pS-pk1" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" constant="212" id="6df-SQ-aK2"/>
-                            <constraint firstItem="g0p-Y7-uck" firstAttribute="top" secondItem="fEE-uK-ViV" secondAttribute="bottom" id="DCH-h5-g0f"/>
-                            <constraint firstItem="fy4-tS-6x3" firstAttribute="trailing" secondItem="Vah-5S-PSY" secondAttribute="trailingMargin" constant="4" id="Ndz-fU-FLe"/>
-                            <constraint firstItem="fy4-tS-6x3" firstAttribute="leading" secondItem="Vah-5S-PSY" secondAttribute="leadingMargin" constant="-4" id="QZ6-H6-XDN"/>
-                            <constraint firstItem="ffp-ek-qbM" firstAttribute="top" secondItem="fy4-tS-6x3" secondAttribute="bottom" constant="58" id="WrP-od-tGD"/>
-                            <constraint firstItem="fy4-tS-6x3" firstAttribute="centerX" secondItem="s4e-pS-pk1" secondAttribute="centerX" id="XSq-ey-DrS"/>
-                            <constraint firstItem="fy4-tS-6x3" firstAttribute="leading" secondItem="g0p-Y7-uck" secondAttribute="leading" id="XUK-Kb-ojo"/>
-                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -204,45 +210,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-1H-W1R">
+                                <rect key="frame" x="20" y="61" width="335" height="444"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-MM-SqI">
+                                <rect key="frame" x="20" y="507" width="106" height="118"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add.png" translatesAutoresizingMaskIntoConstraints="NO" id="hug-e1-Rcc">
+                                <rect key="frame" x="249" y="507" width="106" height="118"/>
+                                <animations/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dG-92-A8f">
-                                <rect key="frame" x="16" y="30" width="48" height="30"/>
-                                <state key="normal" title="Cancel">
+                                <rect key="frame" x="16" y="20" width="94" height="40"/>
+                                <animations/>
+                                <state key="normal" title="TO MENU">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="qeN-Qw-c8i" kind="unwind" unwindAction="unwindToMenuViewController:" id="1Yr-NY-N0h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Preview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-Hl-PCQ">
-                                <rect key="frame" x="212" y="527" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-1H-W1R">
-                                <rect key="frame" x="20" y="68" width="335" height="440"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-MM-SqI">
-                                <rect key="frame" x="249" y="527" width="106" height="118"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-OM-ysm">
-                                <rect key="frame" x="20" y="571" width="77" height="30"/>
-                                <state key="normal" title="Take Photo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cP2-SX-ZAo">
+                                <rect key="frame" x="270" y="20" width="73" height="40"/>
+                                <animations/>
+                                <state key="normal" title="SAVE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createCard:" destination="PAx-wC-3vr" eventType="touchUpInside" id="XYI-8v-m3z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-OM-ysm">
+                                <rect key="frame" x="20" y="516" width="111" height="131"/>
+                                <animations/>
+                                <state key="normal" title="Card Cover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="takePhoto:" destination="PAx-wC-3vr" eventType="touchUpInside" id="JLm-Im-KsT"/>
+                                    <action selector="takeFrontPhoto:" destination="PAx-wC-3vr" eventType="touchUpInside" id="q5i-hA-X19"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1a-mT-Pm9">
+                                <rect key="frame" x="249" y="516" width="111" height="131"/>
+                                <animations/>
+                                <state key="normal" title="Inside Card">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeInsidePhoto:" destination="PAx-wC-3vr" eventType="touchUpInside" id="dAH-Zf-AWR"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="frameForCapture" destination="zmU-1H-W1R" id="KCU-AD-XoD"/>
-                        <outlet property="imageView" destination="zTx-MM-SqI" id="BHt-8P-Tli"/>
+                        <outlet property="frontCardView" destination="zTx-MM-SqI" id="bDd-Wj-dVn"/>
+                        <outlet property="insideCardView" destination="hug-e1-Rcc" id="lYS-4a-Gvp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baA-66-MBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -264,9 +296,11 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_register.png" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-tV-HVK">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EV-KM-BPC">
                                 <rect key="frame" x="60" y="114" width="256" height="67"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -282,21 +316,25 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zka-IV-l4K">
                                 <rect key="frame" x="98" y="220" width="223" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-LZ-6HE">
                                 <rect key="frame" x="98" y="275" width="223" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-Mail Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-Dd-AxQ">
                                 <rect key="frame" x="98" y="385" width="223" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNo-lW-mxx">
                                 <rect key="frame" x="49" y="469" width="277" height="61"/>
+                                <animations/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -306,6 +344,7 @@
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nki-MZ-e7K">
                                 <rect key="frame" x="80" y="12" width="280" height="29"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Keep Me Logged In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -317,13 +356,16 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-Type Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PVs-jV-eV6">
                                 <rect key="frame" x="98" y="332" width="223" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkbox_unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hbt-0T-GJr">
                                 <rect key="frame" x="37" y="-7" width="35" height="41"/>
+                                <animations/>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -351,12 +393,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue background.png" translatesAutoresizingMaskIntoConstraints="NO" id="sAA-bQ-nxF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_account.png" translatesAutoresizingMaskIntoConstraints="NO" id="sAA-bQ-nxF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgI-Mo-2y0">
-                                <rect key="frame" x="16" y="28" width="177" height="30"/>
-                                <state key="normal" title="Return to Main Menu">
+                                <rect key="frame" x="84" y="28" width="202" height="57"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -365,8 +409,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ3-sO-5eA">
-                                <rect key="frame" x="102" y="93" width="171" height="30"/>
-                                <state key="normal" title="Edit Account Information">
+                                <rect key="frame" x="58" y="102" width="268" height="97"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -376,8 +421,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o6-f6-WvY">
-                                <rect key="frame" x="137" y="151" width="101" height="30"/>
-                                <state key="normal" title="Manage Filters">
+                                <rect key="frame" x="50" y="207" width="285" height="100"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -386,8 +432,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-zR-Ysr">
-                                <rect key="frame" x="244" y="569" width="122" height="30"/>
-                                <state key="normal" title="Contact CardKive">
+                                <rect key="frame" x="253" y="563" width="122" height="109"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.098807804653567977" green="1" blue="0.078343733033616192" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -396,8 +443,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-dh-eh1">
-                                <rect key="frame" x="20" y="569" width="96" height="30"/>
-                                <state key="normal" title="Privacy Policy">
+                                <rect key="frame" x="0.0" y="556" width="96" height="111"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -406,8 +454,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYX-ce-LGc">
-                                <rect key="frame" x="132" y="271" width="110" height="30"/>
-                                <state key="normal" title="Re-Sync Device">
+                                <rect key="frame" x="50" y="321" width="267" height="123"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -416,8 +465,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-PS-COx">
-                                <rect key="frame" x="159" y="479" width="56" height="30"/>
-                                <state key="normal" title="Log Out">
+                                <rect key="frame" x="84" y="452" width="205" height="144"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleColor" red="0.098807804649999997" green="1" blue="0.078343733030000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -426,6 +476,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -434,6 +485,65 @@
                 <exit id="GLt-2k-Q8n" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="787.5" y="381.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WF3-sV-slO">
+            <objects>
+                <viewController id="8hj-pa-FAB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="whp-kE-zQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="syr-0n-kaN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6pT-SX-TIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue background.png" translatesAutoresizingMaskIntoConstraints="NO" id="UZF-mN-3cm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dz6-MP-5m8" userLabel="Inner Image View">
+                                <rect key="frame" x="26" y="63" width="329" height="538"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwu-74-vdX" userLabel="Front Image View">
+                                <rect key="frame" x="26" y="63" width="329" height="538"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UJ-eg-EfL">
+                                <rect key="frame" x="26" y="20" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-pg-gJT">
+                                <rect key="frame" x="314" y="20" width="37" height="30"/>
+                                <animations/>
+                                <state key="normal" title="SAVE"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-oh-vAB">
+                                <rect key="frame" x="321" y="300" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82g-fE-kuk">
+                                <rect key="frame" x="7" y="300" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGd-DC-psT">
+                                <rect key="frame" x="115" y="261" width="138" height="138"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jz-jK-Jo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513.5" y="1175.5"/>
         </scene>
         <!--Card Edit View Controller-->
         <scene sceneID="V5c-Q1-eYh">
@@ -449,9 +559,11 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue background.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Aj-5S-Qqm">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
                             </imageView>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uyy-Fc-MUR">
                                 <rect key="frame" x="20" y="610" width="340" height="49"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem title="Delete" image="delete.png" id="F9A-xv-my6"/>
@@ -470,14 +582,18 @@
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VdW-J5-ZsD" userLabel="Inner Image View.jpg">
                                                 <rect key="frame" x="4" y="0.0" width="340" height="500"/>
+                                                <animations/>
                                             </imageView>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rft-XH-8p7">
                                                 <rect key="frame" x="4" y="1" width="340" height="500"/>
+                                                <animations/>
                                             </imageView>
                                         </subviews>
+                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
+                                <animations/>
                                 <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="delegate" destination="l70-2P-v12" id="u3w-dV-eJN"/>
@@ -485,6 +601,7 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ds-a9-kOs">
                                 <rect key="frame" x="20" y="28" width="106" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Return to Menu">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -493,6 +610,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -505,7 +623,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2d-mf-oGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="LuO-IQ-s2D" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="647.5" y="1225.5"/>
+            <point key="canvasLocation" x="991.5" y="1224.5"/>
         </scene>
         <!--User Info View Controller-->
         <scene sceneID="HqG-j2-nd7">
@@ -519,82 +637,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-1d-Dx2">
-                                <rect key="frame" x="22" y="20" width="48" height="30"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MST-rT-9rb" kind="unwind" unwindAction="unwindToAccountViewController:" id="060-hf-BxI"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9p-1H-Enh">
-                                <rect key="frame" x="39" y="83" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AccountName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-bx-u5L">
-                                <rect key="frame" x="98" y="83" width="110" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eMail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53m-uz-Sk2">
-                                <rect key="frame" x="39" y="130" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-Xg-rQG">
-                                <rect key="frame" x="98" y="130" width="111" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Old Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSu-4Y-isc">
-                                <rect key="frame" x="40" y="185" width="113" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvt-0x-nNG">
-                                <rect key="frame" x="39" y="250" width="120" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ReType Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brn-My-asb">
-                                <rect key="frame" x="22" y="310" width="143" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xgs-lN-O0w">
-                                <rect key="frame" x="167" y="182" width="140" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-41-2Y8">
-                                <rect key="frame" x="167" y="246" width="140" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_account_info.png" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-o8-cQn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="spp-BZ-uE4">
-                                <rect key="frame" x="167" y="310" width="140" height="30"/>
+                                <rect key="frame" x="74" y="460" width="227" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAQ-7O-d2A">
-                                <rect key="frame" x="22" y="430" width="38" height="30"/>
-                                <state key="normal" title="SAVE">
+                                <rect key="frame" x="84" y="538" width="197" height="52"/>
+                                <animations/>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="saveAccountInfo:" destination="nbC-uf-kr6" eventType="touchUpInside" id="D9W-oY-Qjz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-bx-u5L">
+                                <rect key="frame" x="64" y="228" width="217" height="43"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="User Name">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-Xg-rQG">
+                                <rect key="frame" x="64" y="286" width="217" height="43"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Account Email">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="36" name="AndaleMono"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xgs-lN-O0w">
+                                <rect key="frame" x="74" y="342" width="227" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UdL-41-2Y8">
+                                <rect key="frame" x="74" y="402" width="227" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsR-1d-Dx2">
+                                <rect key="frame" x="84" y="122" width="204" height="56"/>
+                                <animations/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MST-rT-9rb" kind="unwind" unwindAction="unwindToAccountViewController:" id="060-hf-BxI"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
@@ -608,11 +722,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bc-oc-EWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="MST-rT-9rb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1491" y="382"/>
+            <point key="canvasLocation" x="1490.5" y="381.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="7.jpg" width="189" height="266"/>
+        <image name="add.png" width="512" height="512"/>
+        <image name="background_account.png" width="236" height="418"/>
+        <image name="background_account_info.png" width="236" height="418"/>
         <image name="background_login.png" width="236" height="418"/>
         <image name="background_register.png" width="236" height="418"/>
         <image name="bg_cork.png" width="400" height="400"/>

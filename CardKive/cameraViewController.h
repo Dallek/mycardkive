@@ -14,9 +14,12 @@
 @interface cameraViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     IBOutlet UIView *frameForCapture;
-    IBOutlet UIImageView *imageView;
+    IBOutlet UIImageView *frontCardView;
+    IBOutlet UIImageView *insideCardView;
 }
 
-- (IBAction)takePhoto:(id)sender;
+- (IBAction)takeFrontPhoto:(id)sender;
+- (IBAction)takeInsidePhoto:(id)sender;
+- (IBAction)createCard:(id)sender;
 
 @end
