@@ -575,19 +575,29 @@
                                 </connections>
                             </tabBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4t-eX-NJs">
-                                <rect key="frame" x="20" y="75" width="340" height="500"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t97-aS-eOs">
-                                        <rect key="frame" x="0.0" y="0.0" width="340" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="610"/>
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VdW-J5-ZsD" userLabel="Inner Image View.jpg">
-                                                <rect key="frame" x="4" y="0.0" width="340" height="500"/>
+                                                <rect key="frame" x="8" y="70" width="359" height="532"/>
                                                 <animations/>
                                             </imageView>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rft-XH-8p7">
-                                                <rect key="frame" x="4" y="1" width="340" height="500"/>
+                                                <rect key="frame" x="8" y="70" width="359" height="532"/>
                                                 <animations/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxi-zh-lpV">
+                                                <rect key="frame" x="334" y="321" width="36" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="To IN"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0L-FF-HUB">
+                                                <rect key="frame" x="0.0" y="321" width="46" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="To Out"/>
+                                            </button>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -658,13 +668,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-bx-u5L">
-                                <rect key="frame" x="64" y="228" width="217" height="43"/>
+                                <rect key="frame" x="64" y="226" width="217" height="43"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="User Name">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="36" name="AndaleMono"/>
+                                            <font key="NSFont" size="24" name="TrebuchetMS"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -672,13 +682,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-Xg-rQG">
-                                <rect key="frame" x="64" y="286" width="217" height="43"/>
+                                <rect key="frame" x="64" y="284" width="217" height="43"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Account Email">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="36" name="AndaleMono"/>
+                                            <font key="NSFont" size="24" name="TrebuchetMS"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
