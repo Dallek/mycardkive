@@ -242,6 +242,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createCard:" destination="PAx-wC-3vr" eventType="touchUpInside" id="XYI-8v-m3z"/>
+                                    <segue destination="qeN-Qw-c8i" kind="unwind" unwindAction="unwindToMenuViewController:" id="PCO-Hr-u3d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-OM-ysm">
@@ -543,7 +544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jz-jK-Jo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513.5" y="1175.5"/>
+            <point key="canvasLocation" x="991.5" y="1963.5"/>
         </scene>
         <!--Card Edit View Controller-->
         <scene sceneID="V5c-Q1-eYh">
